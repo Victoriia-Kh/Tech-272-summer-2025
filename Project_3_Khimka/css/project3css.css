@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+ 			{outline:1px solid red;}
+             .clearfix::after {
+   				content: " "; 
+   				visibility: hidden;
+   				display: block;
+   				height: 0;
+   				clear: both;
+			}
+			
+            /* Box sizing*/
+            html {
+                box-sizing: border-box;
+            }
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
+            
+            /*structure*/
+            
+            body {background-color: #6D6654;}
+            .wrapper {
+                width:100%;
+                max-width:50rem;
+                background-color: #E5E3DC;
+                margin:0 auto;
+            }
+            
+            header, section, footer {padding:1.25rem 3.75rem;}
+            
+            header, footer {color:white; background-color: #4B4B4B;}
+            section {border-bottom:1rem solid #6D6654; }  /* page breaker */
+            
+            /* images */
+            
+            figure {margin:0; }
+            
+            img {
+                    width:100%;
+                    max-width:19.5rem; margin-bottom:.6rem;
+            }
+			main img {
+				border-radius: 0 1rem 1rem;
+			}
+			.imgfloat{
+				width: 15rem;
+				float:left;
+				margin: 40px;
+			}
+			#Pieta{border-radius: 1rem 0 1rem 1rem;}
+            
+            /* typography */
+            
+            html {font-family:Baskerville, Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"}
+			h4, h5, h6 {color:#9B5E3C;}
+            h1 {font-size:2.625rem;}
+            h2 {color:#C9DADC;font-size:2.25rem;}
+            h3 {color:#804A30;font-size:1.875rem;}
+            h4 {font-size:1.5rem;}
+            h5 {font-size:1.5rem;}
+            h6 {font-size:1.25rem;}
+            h3, h4, h5 {margin-bottom:.375rem;}
+            p {margin-top:0;}
+            figcaption {font-size:.875rem; font-style:italic; margin-bottom:1rem;}
+            ol {padding-left:1rem; }
+            
+            /* nav type */
+            nav {margin-bottom:2rem;}
+            nav ul {padding-left:0; }
+            nav li {list-style:none; display:inline-block; margin-right:.75rem; padding-right: 2rem;}
+            
+            /*links*/
+            
+            a:link {color:#aaa; text-decoration:none;}
+            a:visited {color:#aaa;}
+            a:hover, a:focus,  a:active{color:aqua;}
+            
+            main a:link {color:#A2676A; }
+            main a:visited {color:#A2676A; }
+            main a:hover, main a:focus, main a:active {color:darkred; }
+            
+            nav a:link, nav a:visited {color:white; background-color:#7D9BA3; padding:.375rem; border-radius:.3rem; }
+            nav a:hover, nav a:focus, nav a:active {color:white; background-color:darkred; }
+
+			figcaption {color:#C9A66B;}
+            
+
+			
+			.cen {text-align: center;}
+			
