@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>tables and forms</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale-1"> <!--this sets up for mobileuse-->
+    <meta name="description" content="tables and forms folder">
+    <link rel="stylesheet" href="x">    <style>
+        {outline: 1px solid red;}
+        
+        /*BOX SIZING*/
+        html{box-sizing:border-box;}
+        *, *:befoore, *:after {box-sizing: inherit;}
+        
+        /*STRUCTURE*/
+        #wrap {width: 100%; max-width: 1000px; margin: 0 auto;}
+        #table {background-color: #ccc4f7; padding: 20px 40px 60px 40px; }
+        #form {background-color: beige; padding: 20px 40px 60px 40px;}
+        
+        /* TYPOGRAPHY*/
+        h1 {text-align: center;}
+        
+        /*TABLE STRUCTURE*/
+        table{width:100%; text-align: left; border-spacing: 0; border-collapse: separate;}
+        /*look up border colapse separate*/
+        th, td {padding:6px; border-bottom: 2px solid white;}
+        th {background-color: #ddd;}
+        tbody th{background-color: beige;}
+        th:nth-child(1) {width:5%;}
+        th:nth-child(2) {width:5%;}
+        th:nth-child(5) {width:15%;}
+        th:nth-child(5), td:nth-child(5) {text-align: right;}
+        tbody tr:nth-child(odd) {background-color: yellow;}
+        tbody tr:nth-child(even) {background-color: #fbc669;}
+        tfoot td{background-color: black; color:white; font-size:.75rem; border-bottom: 0;}
+
+        /* FORM STRUCTURE */
+        input, select, textarea, button {display:block; margin-bottom: 6px; padding: 3px;}
+        input[type=text], input[type=email], select, textarea {width: 100%; max-width: 400px;}
+        input[type=radio] {display:inline; margin: 0 10px;}
+        
+        /* FORM TYPOGRAPHY */
+        #form p {margin-bottom: 4px;}
+        #radio {margin: 20px 0;}
+        
+        /* Form buttons */
+        button {width:100px; border-radius: 6px;}
+        button, button:visited {margin-top:20px; background-color: red; color:white; font-weight: bold; border:0; }
+        button:hover, button:focus, button:active {background-color: aqua; color:black; }
+        
+        button[type=reset], button[type=reset]:visited {background-color: darkkhaki; color:black}
+        button[type=reset]:hover, button[type=reset]:focus, button[type=reset]:active {background-color: #999; color:white; }
+        
+    </style>
+</head>
+<body>
+    <h1>Tables and Forms</h1>
+    <div id="wrap">
+        <section id="table">
+            <h2>Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">GradePoint</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">#1</th>
+                        <td>32</td>
+                        <td>John</td>
+                        <td>Glenn</td>
+                        <td>3.04</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#2</th>
+                        <td>28</td>
+                        <td>Gus</td>
+                        <td>Grisson</td>
+                        <td>3.28</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#3</th>
+                        <td>36</td>
+                        <td>Sally</td>
+                        <td>Ride</td>
+                        <td>4.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#4</th>
+                        <td>35</td>
+                        <td>William</td>
+                        <td>Shepard</td>
+                        <td>3.96</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">©2025 All Rights Reserved</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="form">
+            <h2>Form</h2>
+            <h3>Contact us:</h3>
+            <form action="mailto:sample@sample.com" method="post" enctype="text/plain">
+            <!-- change sample to your email address -->
+                <!--NAME -->
+                <input type="text" name="firstname" required autofocus placeholder="First Name*"> <!-- name must be uniqu; required is required to send the form; autofocus means cursor is active in this field when page is open; placeholder is grey text -->
+                <input type="text" name="lastname" required placeholder="Last Name*">
+                
+                <!-- EMAIL -->
+                <input type="email" name="email" required placeholder="Email*">
+                
+                <!-- RADIOBUTTONS -->
+                <div id="radio">
+                    <p>Favorite wed language:</p>
+                    <input type="radio" id="html" name="language" value="HTML"><!-- button -->
+                    <label for="html">HTML</label><br>        <!-- LABEL FOR BUTTON -->
+                    <input type="radio" id="css" name="language" value="CSS"><!-- button -->
+                    <label for="css">CSS</label><br>        <!-- LABEL FOR BUTTON -->
+                    <input type="radio" id="java" name="language" value="Javacript"><!-- button -->
+                    <label for="java">xxxxxxxxxx</label><br>        <!-- LABEL FOR BUTTON -->
+                </div> <!-- end radio -->
+                
+                <!-- Reason for email -->
+                <p>Reason for email:</p>
+                <select name="reason" >
+                    <option value="instruction">I'm looking for instruction</option>
+                    <option value="newsletter">I'd like to receive your newsletter</option>
+                    <option value="other">Other reason</option>
+                    <option value="web">I noticed an error on your website</option>
+                </select>
+                
+                <!-- COMMENT -->
+                <textarea name="comment" cols="45" rows="4" placeholder="Comments"></textarea>
+                
+                <!-- BUTTON -->
+                <button type="submit" value="submit">Submit</button>
+                <button type="reset" value="reset">Reset</button>                
+            </form>
+        </section>
+    </div><!-- close wrap -->
+    
+    
+</body>
+</html>
