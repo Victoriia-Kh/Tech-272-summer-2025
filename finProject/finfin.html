@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale-1"> <!--this sets up for mobile use-->
+    <meta name="description" content="">
+    <link href="css/normalize.css" rel="stylesheet">    <style>
+        * {outline: 1px solid red;}
+        
+        /*BOX SIZING*/
+        html{box-sizing:border-box;}
+        *, *:befoore, *:after {box-sizing: inherit; margin: 0; padding: 0;}
+	
+		#wrap {max-width: 70rem; margin:0 auto; }
+		#body { width:100%; height: 80rem; background-color: antiquewhite; display: flex; flex-wrap:wrap; gap:11px; align-items: center;}
+		footer {height: 10rem; background-color: beige; padding: 3rem;}
+	.text{width:40%; height: 330px; }
+	.pic{width:30%; height: 200px; }
+	
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .logo {height: 66px; width:180px; float: left;}
+        nav {height: 38px; width: 358px; float: right; margin-top: 27px;}
+        header {height: 143px; padding:34px 46px 0 71px}
+		p {margin: 0;}
+	
+		.footerinfo{}
+    </style>
+</head>
+    <div id="wrap">
+        <header class="clearfix">
+            <div class="logo">logo</div>
+            <nav>nav</nav>
+        </header>
+		
+		<div id="body">
+			<p>body</p>
+			<div class="pic"><p>pic#1</p></div>
+			<div class="text"><p>some text</p></div>
+			<div class="pic"><p>pic#2</p></div>
+			<div class="pic"><p>pic#3</p></div>
+			<div class="text"><p>some text</p></div>
+
+			
+		</div>
+    	<footer>
+			<p>footer</p>
+			<div class="footerinfo"><p>footer info</p></div>
+		</footer>
+	</div>
+    
+    
+</html>

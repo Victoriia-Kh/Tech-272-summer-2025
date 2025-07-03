@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale-1"> <!--this sets up for mobile use-->
+    <meta name="description" content="">
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/general.css" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+		
+		header, #main, footer {
+			/* #FADADD, #FDDAC5, #FCF4C0, #CFF6DC, #DCCEF9 */
+			background: #FADADD;
+			background: linear-gradient(90deg, rgba(250, 218, 221, 1) 5%, rgba(253, 218, 197, 1) 10%, rgba(252, 244, 192, 1) 15%, rgba(207, 246, 220, 1) 20%, rgba(220, 206, 249, 1) 50%);
+		}
+		
+		
+		
+		
+
+        h6 {font-size: 16px; margin: 5%;line-height: 165%; text-indent: 25px}
+        h2 {color: blue; margin-left: 14%; font-size: 200%;}
+        h1 {
+            line-height:150%;  
+            margin-top:0;
+            font-family: "Michroma", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .form{display:flex; flex-direction:column; line-height: 165%; gap:4px;}
+        .inline{display:flex; line-height: 165%; gap: 0 40px; margin: 0;}
+        input, select, textarea, button {display:block; margin:8px 0;}
+        input[type=email]{width:98%;}
+        input[type=radio] {display:inline; margin: 0 10px;}
+        
+        button {width:100px; border-radius: 6px;}
+        button, button:visited {margin-top:20px; background-color: red; color:white; font-weight: bold; border:0; }
+        button:hover, button:focus, button:active {background-color: aqua; color:black; }
+        
+        button[type=reset], button[type=reset]:visited {background-color: darkkhaki; color:black}
+        button[type=reset]:hover, button[type=reset]:focus, button[type=reset]:active {background-color: #999; color:white;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="clearfix">
+            <div class="name"><h1>Viktoriia Khimka</h1></div>
+            <nav>
+            <ul class="navigation">
+                <li><a href="home_page.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li id="here"><a href="contact.html">Contact</a></li>
+			</ul>
+            </nav>
+        </header>
+        
+        <div id="main">
+        
+        <section id="form">
+  
+            <form action="mailto:victoria.khimka@gmail.com" method="post" enctype="text/plain">
+            <!-- change sample to your email address -->
+                <div class="form">
+                <div class="inline">
+                <!--NAME -->
+                <input type="text" name="firstname" required autofocus placeholder="First Name*"> <!-- name must be uniqu; required is required to send the form; autofocus means cursor is active in this field when page is open; placeholder is grey text -->
+                <input type="text" name="lastname" required placeholder="Last Name*">
+                </div>
+                <!-- EMAIL -->
+                <input type="email" name="email" required placeholder="Email*">
+                </div>
+                <!-- RADIOBUTTONS -->
+                <div id="radio">
+                    <p>Reason for email:</p>
+                    <input type="radio" id="question" name="reason" value="Question"><!-- button -->
+                    <label for="question">I have a question</label><br>            <!-- LABEL FOR BUTTON -->
+                    <input type="radio" id="work" name="reason" value="Work"><!-- button -->
+                    <label for="work">Work related</label><br>                 <!-- LABEL FOR BUTTON -->
+                    <input type="radio" id="mistake" name="reason" value="Mistake"><!-- button -->
+                    <label for="mistake">Mistake on the page</label><br>       <!-- LABEL FOR BUTTON -->
+                </div> <!-- end radio -->
+                
+                <!-- Reason for email -->
+                
+                <!-- COMMENT -->
+                <textarea name="comment" cols="45" rows="4" placeholder="Comments"></textarea>
+                
+                <!-- BUTTON -->
+                <button type="submit" value="submit">Submit</button>
+                <button type="reset" value="reset">Reset</button>                
+            </form>
+        </section>
+        </div>
+        <footer>
+            <div class="footerinfo"><p>This project was created by Viktoriia Khimka</p></div>
+        </footer>
+    </div>
+    
+    </body>
+</html>
