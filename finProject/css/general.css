@@ -1,0 +1,101 @@
+ {outline: 1px solid red;}
+        
+/*BOX SIZING*/
+
+html{box-sizing:border-box; background-color: #4A4A4A; color: #4A4A4A; }
+*, *:before, *:after {box-sizing: inherit; margin: 0; padding: 0;}
+
+.navigation ul {margin-top:0;}
+.navigation li {width:83px; text-align: center; padding:9px; background-color: #4A4A4A; border-radius:6px; }
+.navigation a{color:white; text-decoration:none;}
+.navigation a:hover, .navigation a:focus {color: #f08080;}
+
+.navigation #here a{ color:lightblue; }
+.navigation #here { outline: 2px solid white;}
+
+#wrap {max-width: 65rem; margin:0 auto; }
+header {
+	position: fixed;
+	width:100%; 
+	max-width:65rem; 
+	top:0;
+	height: 180px; 
+	padding:34px 56px 0px;
+}
+#main {
+	display: flex; 
+	flex-wrap:wrap; 
+	gap:44px 64px; 
+	justify-content: center; 
+	padding:230px 20px 50px 20px; 
+}
+footer {
+	height: 9rem; 
+	padding: 3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.name {height: 96px; width:180px; float: left;}
+nav {height: 38px; width: 500px; float: right; margin-top: 25px;}
+
+.text{width:40%; height: 330px; }
+.pic{width:30%; height: 240px; align-items: center;}
+.doublepicture{width: 30%; height:auto; display: flex; flex-direction:column; }
+.pic2{ height: 240px; }
+.footerinfo{margin:20px 40% 0 20px;}
+.navigation{display:flex; list-style-type:none; gap:11px; flex-wrap:wrap;}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.text a {color: #FF6B6B; text-decoration:none;}
+.text a:visited {color: #8266A3; text-decoration:none;}
+.text a:hover, .text a:focus {color: white; text-decoration:none;}
+
+
+
+/*Structure*/
+
+#wrapper {max-width: 792px; margin:0 auto;}
+#contact {width:40%; background-color: rgba(205, 205, 205, 0.2); padding: 1rem;  border-radius: 2rem 0 0 2rem;}
+#general {width: 60%; background-color: rgba(255, 255, 255, 0.8); padding: 1rem;  border-radius: 0 2rem 2rem 0;}
+.flex-box {display: flex;}
+
+/*typography*/
+
+html {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}
+ h1 {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom:0;
+}
+
+.homecloud {width:100%; max-width: 440px; min-height: 150px; border-radius: 2rem; background-color: rgba(255, 255, 255, 0.8); padding: 30px;}
+
+#resume h2, #resume h3 {font-weight: 500;}
+
+#general h3 {padding-bottom:3px; border-bottom:1px solid #666;}
+#general p, #general h4 {margin:0;}
+#general h4 {font-weight:500;}
+
+#contact p {padding: 0; margin:0 0 3px 0; font-size: .8rem;}
+
+#general ul {list-style-type: none; margin-left: 13px;}
+#skills ul {list-style-type: none; flex-wrap:wrap; gap:9px; padding:0;}
+#skills li {background-color: #999; padding: 6px; color:white; font-weight:500;}
+
+.small {font-size:50%;}
